@@ -66,15 +66,16 @@ ol li::before {
 }
 
 /* to make the numbers line up beside each of the instructions*/
-@media (width > 1641px) {
+/* @media (width > 1641px) {
     ol li::before {
         left: 34.5%;
     }
-}
+} */
 
-@media (1640px > width > 1431px){
+@media (1431px < width < 1640px){
     ol li::before {
-        left: 31%;
+/*         left: 31%; */
+        left: 34%;
     }
 }
 
