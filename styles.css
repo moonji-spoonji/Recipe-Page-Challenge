@@ -63,10 +63,22 @@ ol li::before {
     font-weight: 600;
     /* keeps the numbers separate from the other text */
     position: absolute; 
-    /* to make the numbers line up beside each of the instructions*/
-    left: 31.5%; 
 }
-@media (376px < width < 1461px){
+
+/* to make the numbers line up beside each of the instructions*/
+@media (width > 1641px) {
+    ol li::before {
+        left: 34.5%;
+    }
+}
+
+@media (1640px > width > 1431px){
+    ol li::before {
+        left: 31%;
+    }
+}
+
+@media (376px < width < 1430px){
     ol li::before {
         left: 29%; 
     }
