@@ -47,44 +47,16 @@ p, ul, li, table {
     line-height: 150%;
 }
 
-/* START OF STYLING THE INSTRUCTIONS NUMBERS */
-ol {
-    list-style: none;
-    counter-reset: item;
-}
-
-ol li {
-    counter-increment: item;
-}
-
-ol li::before {
-    content: counter(item) ". ";
+/* STYLING THE INSTRUCTIONS NUMBERS */
+ol > li::marker {
     color: var(--brown-800);
     font-weight: 600;
-    /* keeps the numbers separate from the other text */
-    position: absolute; 
 }
 
-/* to make the numbers line up beside each of the instructions*/
-/* @media (width > 1641px) {
-    ol li::before {
-        left: 34.5%;
-    }
-} */
-
-@media (1431px < width < 1640px){
-    ol li::before {
-/*         left: 31%; */
-        left: 34%;
-    }
+li {
+padding-left: 20px;
 }
 
-@media (376px < width < 1430px){
-    ol li::before {
-        left: 29%; 
-    }
-}
-/* END OF STYLING INSTRUCTIONS NUMBERS */
 
 h1 {
     font-size: 34px;
@@ -159,25 +131,16 @@ p strong {
         margin-top: 0;
         overflow-x: hidden;
     }
+    
     img {
         border-radius: 0;
         width: 100vw;
         margin: 0 -30px;
-
     }
 
     .card {
         width: 100%;
         border-radius: 0;
         padding: 0 30px;
-
-    }
-
-    ol li::before {
-        content: counter(item) ". ";
-        color: var(--brown-800);
-        font-weight: 600;
-        position: absolute; 
-        left: 10%; 
     }
 }
