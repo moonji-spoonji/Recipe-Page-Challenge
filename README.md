@@ -21,7 +21,7 @@ Frontend Mentor's desktop design:
 ![Frontend Mentor's desktop design](./design/desktop-design.jpg)
 
 My solution for the desktop design:
-![My solution for te desktop design](my_solution_desktop.png)
+![My solution for te desktop design](my_solution_desktop_refined.png)
 
 Frontend Mentor's mobile design:
 
@@ -29,7 +29,7 @@ Frontend Mentor's mobile design:
 
 My solution for the mobile design:
 
-![my solution for the mobile design](my_solution_mobile.png)
+![my solution for the mobile design](my_solution_mobile_refined.png)
 
 ### Links
 - Solution URL: [Recipe Page](https://recipe-page-moonji.netlify.app/)
@@ -45,27 +45,9 @@ My solution for the mobile design:
 I learned how to style numeric/ordered and bulleted/unordered lists:
 
 ```css
-/* START OF STYLING THE INSTRUCTIONS NUMBERS */
-ol {
-    list-style: none;
-    counter-reset: item;
+ol li::marker {
+    color: 
 }
-
-ol li {
-    counter-increment: item;
-}
-
-ol li::before {
-    content: counter(item) ". ";
-    color: var(--brown-800);
-    font-weight: 600;
-    /* keeps the numbers separate from the other text */
-    position: absolute; 
-    /* to make the numbers line up beside each of the instructions*/
-    left: 36%; 
-}
-/* END OF STYLING INSTRUCTIONS NUMBERS */
-
 
 /* set the color of the bullet points to the color of the Ingredients heading */
 .ingredients li::marker {
